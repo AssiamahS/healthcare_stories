@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Stories</title>
+</head>
+<body>
+    <h1>Healthcare Breakthrough Stories</h1>
+    <a href="{% url 'submit_story' %}">Submit a Story</a>
+    <ul>
+        {% for story in stories %}
+            <li>{{ story.title }} - {{ story.location }} - {{ story.category }} - {{ story.created_at }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
