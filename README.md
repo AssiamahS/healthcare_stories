@@ -1,0 +1,2 @@
+# healthcare_stories
+pip install django django-admin startproject healthcare_stories cd healthcare_stories django-admin startapp stories
